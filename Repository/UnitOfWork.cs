@@ -16,6 +16,7 @@ namespace HMS.Repository
             Address = new AddressRepository(_db);
             Doctor = new DoctorRepository(_db);
             Bill = new BillRepository(_db);
+            Appointment = new AppointmentRepository(_db);
         }
         
         public IPatientRepository Patient { get; set; }
@@ -23,6 +24,7 @@ namespace HMS.Repository
         public IDoctorRepository Doctor { get ; set; }
         public INurseRepository Nurse { get ; set; }
         public IBillRepository Bill { get; set; }
+        public IAppointmentRepository Appointment { get; set; }
 
         public void Dispose()
         {

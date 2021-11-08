@@ -12,6 +12,7 @@ namespace HMS.Repository.IRepository
         IDoctorRepository Doctor { get; set; }
         INurseRepository Nurse { get; set; }
         IBillRepository Bill { get; set; }
+        IAppointmentRepository Appointment { get; set; }
 
         Task Save();
     }

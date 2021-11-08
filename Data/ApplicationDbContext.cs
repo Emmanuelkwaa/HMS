@@ -18,5 +18,6 @@ namespace HMS.Data
         public DbSet<Doctor> Doctors { get; set; }
         public DbSet<Medicine> Medicines { get; set; }
         public DbSet<Room> Rooms { get; set; }
+        public DbSet<Appointment> Appointments { get; set; }
     }
 }
