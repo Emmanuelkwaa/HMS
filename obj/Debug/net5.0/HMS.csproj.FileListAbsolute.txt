@@ -1,0 +1,112 @@
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/appsettings.Development.json
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/appsettings.json
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/HMS.exe
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/HMS.deps.json
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/HMS.runtimeconfig.json
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/HMS.runtimeconfig.dev.json
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/HMS.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/ref/HMS.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/HMS.pdb
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/AutoMapper.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/Humanizer.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/Microsoft.Data.SqlClient.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Design.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Relational.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/Microsoft.Extensions.Identity.Core.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/Microsoft.Extensions.Identity.Stores.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/Microsoft.Identity.Client.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/Microsoft.IdentityModel.JsonWebTokens.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/Microsoft.IdentityModel.Logging.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/Microsoft.IdentityModel.Tokens.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/Microsoft.OpenApi.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/Newtonsoft.Json.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/Swashbuckle.AspNetCore.Swagger.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/System.Configuration.ConfigurationManager.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/System.Diagnostics.DiagnosticSource.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/System.IdentityModel.Tokens.Jwt.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/System.Runtime.Caching.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.pdb
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.pdb
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.pdb
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.pdb
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/bin/Debug/net5.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/obj/Debug/net5.0/HMS.csproj.AssemblyReference.cache
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/obj/Debug/net5.0/HMS.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/obj/Debug/net5.0/HMS.AssemblyInfoInputs.cache
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/obj/Debug/net5.0/HMS.AssemblyInfo.cs
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/obj/Debug/net5.0/HMS.csproj.CoreCompileInputs.cache
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/obj/Debug/net5.0/HMS.MvcApplicationPartsAssemblyInfo.cs
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/obj/Debug/net5.0/HMS.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/obj/Debug/net5.0/staticwebassets/HMS.StaticWebAssets.Manifest.cache
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/obj/Debug/net5.0/staticwebassets/HMS.StaticWebAssets.xml
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/obj/Debug/net5.0/scopedcss/bundle/HMS.styles.css
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/obj/Debug/net5.0/HMS.RazorTargetAssemblyInfo.cache
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/obj/Debug/net5.0/HMS.csproj.CopyComplete
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/obj/Debug/net5.0/HMS.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/obj/Debug/net5.0/ref/HMS.dll
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/obj/Debug/net5.0/HMS.pdb
+C:/Users/ONE BEAST/Desktop/Project/HMS/HMS/obj/Debug/net5.0/HMS.genruntimeconfig.cache
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/obj/Debug/net5.0/HMS.csprojAssemblyReference.cache
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/obj/Debug/net5.0/HMS.GeneratedMSBuildEditorConfig.editorconfig
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/obj/Debug/net5.0/HMS.AssemblyInfoInputs.cache
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/obj/Debug/net5.0/HMS.AssemblyInfo.cs
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/obj/Debug/net5.0/HMS.csproj.CoreCompileInputs.cache
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/obj/Debug/net5.0/HMS.MvcApplicationPartsAssemblyInfo.cs
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/obj/Debug/net5.0/HMS.MvcApplicationPartsAssemblyInfo.cache
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/obj/Debug/net5.0/HMS.dll
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/obj/Debug/net5.0/ref/HMS.dll
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/obj/Debug/net5.0/HMS.pdb
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/bin/Debug/net5.0/appsettings.Development.json
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/bin/Debug/net5.0/appsettings.json
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/bin/Debug/net5.0/HMS.deps.json
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/bin/Debug/net5.0/HMS.runtimeconfig.json
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/bin/Debug/net5.0/HMS.runtimeconfig.dev.json
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/bin/Debug/net5.0/HMS.dll
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/bin/Debug/net5.0/ref/HMS.dll
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/bin/Debug/net5.0/HMS.pdb
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/bin/Debug/net5.0/AutoMapper.dll
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/bin/Debug/net5.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/bin/Debug/net5.0/Humanizer.dll
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/bin/Debug/net5.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/bin/Debug/net5.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/bin/Debug/net5.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.dll
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/bin/Debug/net5.0/Microsoft.Extensions.Identity.Core.dll
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/bin/Debug/net5.0/Microsoft.Extensions.Identity.Stores.dll
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/bin/Debug/net5.0/Microsoft.OpenApi.dll
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/bin/Debug/net5.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/bin/Debug/net5.0/System.Diagnostics.DiagnosticSource.dll
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/obj/Debug/net5.0/staticwebassets/HMS.StaticWebAssets.Manifest.cache
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/obj/Debug/net5.0/staticwebassets/HMS.StaticWebAssets.xml
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/obj/Debug/net5.0/scopedcss/bundle/HMS.styles.css
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/obj/Debug/net5.0/HMS.RazorTargetAssemblyInfo.cache
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/obj/Debug/net5.0/HMS.csproj.CopyComplete
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/obj/Debug/net5.0/HMS.genruntimeconfig.cache
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/bin/Debug/net5.0/MySqlConnector.dll
+/Users/emmanuelkwaa/Desktop/project/HMS/HMS/bin/Debug/net5.0/Pomelo.EntityFrameworkCore.MySql.dll
