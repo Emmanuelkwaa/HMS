@@ -13,6 +13,7 @@ namespace HMS.Repository.IRepository
         INurseRepository Nurse { get; set; }
         IBillRepository Bill { get; set; }
         IAppointmentRepository Appointment { get; set; }
+        IScheduleRepository Schedule { get; set; }
 
         Task Save();
     }
