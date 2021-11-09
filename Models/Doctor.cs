@@ -33,6 +33,6 @@ namespace HMS.Models
 
         //public int PatientId { get; set; }
         // [ForeignKey("Id")]
-        public ICollection<Patient> AssignedPatients { get; set; }
+        //public ICollection<Patient> AssignedPatients { get; set; }
     }
 }

@@ -14,6 +14,9 @@ namespace HMS.Models.DTOs.Create
         public string FirstName { get; set; }
         [Required]
         public string LastName { get; set; }
+        public string LicenseNumber { get; set; }
+        public Department Department { get; set; }
+        public string Specialty { get; set; }
         [Required]
         public string Sex { get; set; }
         public int AddressId { get; set; }

@@ -24,4 +24,9 @@
   <ItemGroup>
     <None Remove="MySql.Data.EntityFrameworkCore" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin" />
+    <Folder Include="Areas\Staff" />
+  </ItemGroup>
 </Project>

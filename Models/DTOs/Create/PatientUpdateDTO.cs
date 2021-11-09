@@ -1,6 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using HMS.Models.DTOs.Get;
 
 namespace HMS.Models.DTOs.Create
 {
@@ -25,7 +26,5 @@ namespace HMS.Models.DTOs.Create
         public EmergencyContact EmergencyContact { get; set; }
         public Address Address { get; set; }
         public Room Room { get; set; }
-        public Doctor Doctor { get; set; }
-        public Nurse Nurse { get; set; }
     }
 }

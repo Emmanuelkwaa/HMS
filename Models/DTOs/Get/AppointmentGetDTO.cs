@@ -1,13 +1,14 @@
 using System;
 using System.ComponentModel.DataAnnotations;
+using HMS.Models.DTOs.Get;
 
 namespace HMS.Models
 {
-    public class Appointment
+    public class AppointmentGetDTO
     {
         public int Id { get; set; }
-        public Doctor Doctor { get; set; }
-        public Patient Patient { get; set; }
+        public DoctorReceptionGetDTO Doctor { get; set; }
+        public PatientReceptionGetDTO Patient { get; set; }
         [Required]
         public string Detail { get; set; }
         [Required]

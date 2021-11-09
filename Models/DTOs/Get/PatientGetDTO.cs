@@ -10,11 +10,15 @@ namespace HMS.Models.DTOs.Get
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Sex { get; set; }
+        public decimal Weight { get; set; }
+        public string Height { get; set; }
+        public string BloodType { get; set; }
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
-        public DateTime DateAdmitted { get; set; }
-        public DateTime DateDischarge { get; set; }
+        public string Nationality { get; set; }
+        public EmergencyContact EmergencyContact { get; set; }
         public Address Address { get; set; }
         public Room Room { get; set; }
+        public PatientDoctorUpdateDTO Doctor { get; set; }
     }
 }
