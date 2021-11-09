@@ -379,6 +379,40 @@ namespace HMS.Migrations
                     b.ToTable("Schedules");
                 });
 
+            modelBuilder.Entity("HMS.Models.TreatmentHistory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int?>("AppointmentId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Disease")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("DoctorId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PatientId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Treatment")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AppointmentId");
+
+                    b.HasIndex("DoctorId");
+
+                    b.HasIndex("PatientId");
+
+                    b.ToTable("TreatmentHistories");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -637,7 +671,7 @@ namespace HMS.Migrations
                         .HasForeignKey("AddressId");
 
                     b.HasOne("HMS.Models.Doctor", "Doctor")
-                        .WithMany("AssignedPatients")
+                        .WithMany()
                         .HasForeignKey("DoctorId");
 
                     b.HasOne("HMS.Models.EmergencyContact", "EmergencyContact")
@@ -670,6 +704,31 @@ namespace HMS.Migrations
                         .HasForeignKey("DoctorId");
 
                     b.Navigation("Doctor");
+                });
+
+            modelBuilder.Entity("HMS.Models.TreatmentHistory", b =>
+                {
+                    b.HasOne("HMS.Models.Appointment", "Appointment")
+                        .WithMany()
+                        .HasForeignKey("AppointmentId");
+
+                    b.HasOne("HMS.Models.Doctor", "Doctor")
+                        .WithMany()
+                        .HasForeignKey("DoctorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("HMS.Models.Patient", "Patient")
+                        .WithMany()
+                        .HasForeignKey("PatientId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Appointment");
+
+                    b.Navigation("Doctor");
+
+                    b.Navigation("Patient");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -726,11 +785,6 @@ namespace HMS.Migrations
             modelBuilder.Entity("HMS.Models.Bill", b =>
                 {
                     b.Navigation("Medicine");
-                });
-
-            modelBuilder.Entity("HMS.Models.Doctor", b =>
-                {
-                    b.Navigation("AssignedPatients");
                 });
 #pragma warning restore 612, 618
         }

@@ -14,6 +14,7 @@ namespace HMS.Repository.IRepository
         IBillRepository Bill { get; set; }
         IAppointmentRepository Appointment { get; set; }
         IScheduleRepository Schedule { get; set; }
+        ITreatmentHistoryRepository TreatmentHistory { get; set; }
 
         Task Save();
     }
