@@ -1,3 +1,4 @@
+using System.Linq;
 using HMS.Models;
 using HMS.Repository.IRepository;
 using HSM.Repository;
@@ -16,9 +17,9 @@ namespace HMS.Repository
             _db = db;
         }
         
-        public async Task<bool> UpdateBill(Bill bill)
+        public bool UpdateBill(Bill bill)
         {
-            var existingBill = await _db.Bills.FirstOrDefaultAsync(a => a.Id == bill.Id);
+            var existingBill = dbSet.Where(a => a.Id == bill.Id).AsNoTracking();
 
             if (existingBill == null) return false;
             

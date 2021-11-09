@@ -5,6 +5,6 @@ namespace HMS.Repository.IRepository
 {
     public interface IAppointmentRepository : IRepository<Appointment>
     {
-        Task<bool> UpdateAppointment(Appointment appointment);
+        bool UpdateAppointment(Appointment appointment);
     }
 }

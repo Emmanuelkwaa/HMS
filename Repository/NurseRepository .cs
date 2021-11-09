@@ -1,3 +1,4 @@
+using System.Linq;
 using HMS.Models;
 using HMS.Repository.IRepository;
 using HSM.Repository;
@@ -15,9 +16,9 @@ namespace HMS.Repository
             _db = db;
         }
 
-        public async Task<bool> UpdateNurse(Nurse patient)
+        public bool UpdateNurse(Nurse patient)
         {
-            var existingNurse = await _db.Nurses.FirstOrDefaultAsync(p => p.Id == patient.Id);
+            var existingNurse = dbSet.Where(p => p.Id == patient.Id).AsNoTracking();
 
             if (existingNurse == null) return false;
             

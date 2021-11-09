@@ -126,7 +126,7 @@ namespace HMS.Controllers
 
             var patient = _mapper.Map<Patient>(patientUpdateDto);
 
-            if (!await _unitOfWork.Patient.UpdatePatient(patient))
+            if (!_unitOfWork.Patient.UpdatePatient(patient))
             {
                 ModelState.AddModelError("", $"Something went wrong when updating the record {patient.FirstName} {patient.LastName}");
                 return StatusCode(404, ModelState);

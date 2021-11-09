@@ -109,7 +109,7 @@ namespace HMS.Controllers
 
             var bill = _mapper.Map<Bill>(billUpdateDTO);
 
-            if (!await _unitOfWork.Bill.UpdateBill(bill))
+            if (!_unitOfWork.Bill.UpdateBill(bill))
             {
                 ModelState.AddModelError("", $"Something went wrong when updating the record BILL");
                 return StatusCode(404, ModelState);

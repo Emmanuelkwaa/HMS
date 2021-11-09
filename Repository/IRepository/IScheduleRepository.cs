@@ -5,6 +5,6 @@ namespace HMS.Repository.IRepository
 {
     public interface IScheduleRepository : IRepository<Schedule>
     {
-        Task<bool> UpdateSchedule(Schedule schedule);
+        bool UpdateSchedule(Schedule schedule);
     }
 }

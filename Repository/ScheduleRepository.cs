@@ -1,3 +1,4 @@
+using System.Linq;
 using HMS.Models;
 using HMS.Repository.IRepository;
 using HSM.Repository;
@@ -15,9 +16,9 @@ namespace HMS.Repository
             _db = db;
         }
 
-        public async Task<bool> UpdateSchedule(Schedule schedule)
+        public bool UpdateSchedule(Schedule schedule)
         {
-            var existingSchedule = await _db.Schedules.FirstOrDefaultAsync(s => s.Id == schedule.Id);
+            var existingSchedule = dbSet.Where(s => s.Id == schedule.Id).AsNoTracking();
 
             if (existingSchedule == null) return false;
             

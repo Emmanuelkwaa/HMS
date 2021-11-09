@@ -5,6 +5,6 @@ namespace HMS.Repository.IRepository
 {
     public interface IBillRepository : IRepository<Bill>
     {
-        Task<bool> UpdateBill(Bill address);
+        bool UpdateBill(Bill address);
     }
 }

@@ -1,3 +1,4 @@
+using System.Linq;
 using HMS.Models;
 using HMS.Repository.IRepository;
 using HSM.Repository;
@@ -15,10 +16,10 @@ namespace HMS.Repository
             _db = db;
         }
 
-        public async Task<bool> UpdateAppointment(Appointment appointment)
+        public bool UpdateAppointment(Appointment appointment)
         {
-            var existingAppointment = await _db.Appointments.FirstOrDefaultAsync(a => a.Id == appointment.Id);
-
+            var existingAppointment = dbSet.Where(a => a.Id == appointment.Id).AsNoTracking();
+            
             if (existingAppointment == null) return false;
             
             _db.Update(appointment);

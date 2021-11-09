@@ -5,6 +5,6 @@ namespace HMS.Repository.IRepository
 {
     public interface IDoctorRepository : IRepository<Doctor>
     {
-        Task<bool> UpdateDoctor(Doctor patient);
+        bool UpdateDoctor(Doctor patient);
     }
 }
