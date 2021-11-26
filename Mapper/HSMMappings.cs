@@ -27,6 +27,7 @@ namespace HMS.Mapper
             CreateMap<Medicine, MedicineGetDTO>().ReverseMap();
             CreateMap<Appointment, AppointmentGetDTO>().ReverseMap();
             CreateMap<Appointment, AppointmentCreateDTO>().ReverseMap();
+            CreateMap<Schedule, ScheduleGetDTO>().ReverseMap();
         }
     }
 }
