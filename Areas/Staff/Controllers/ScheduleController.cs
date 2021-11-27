@@ -38,7 +38,6 @@ namespace HMS.Areas.Staff.Controllers
 
             foreach (var schedule in listOfSchedules)
             {
-                Console.WriteLine(schedule.ScheduleDay);
                 scheduleDto.Add(_mapper.Map<ScheduleGetDTO>(schedule));
             }
 
