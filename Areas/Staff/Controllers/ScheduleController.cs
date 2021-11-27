@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
 using HMS.Models;
+using HMS.Models.DTOs.Create;
 using HMS.Repository.IRepository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HMS.Areas.Staff.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class ScheduleController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -35,6 +38,7 @@ namespace HMS.Areas.Staff.Controllers
 
             foreach (var schedule in listOfSchedules)
             {
+                Console.WriteLine(schedule.ScheduleDay);
                 scheduleDto.Add(_mapper.Map<ScheduleGetDTO>(schedule));
             }
 
@@ -59,7 +63,7 @@ namespace HMS.Areas.Staff.Controllers
             }
 
             var scheduleDto = _mapper.Map<ScheduleGetDTO>(schedule);
-
+            
             return Ok(scheduleDto);
         }
 
@@ -67,20 +71,18 @@ namespace HMS.Areas.Staff.Controllers
         [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(Schedule))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> CreateSchedule(int doctorId, [FromBody] Schedule schedule)
+        public async Task<IActionResult> CreateSchedule(int doctorId, [FromBody] ScheduleCreateDTO scheduleToCreate)
         {
             if(!ModelState.IsValid) return StatusCode(404, ModelState);
 
             var doctor = await _unitOfWork.Doctor.GetFirstOrDefaultAsync(d => d.Id == doctorId);
 
-            //var schedule = _mapper.Map<Schedule>(scheduleToCreate);
+            var schedule = _mapper.Map<Schedule>(scheduleToCreate);
+            schedule.ScheduleDay = schedule.StartTime.ToString("dddd");
             schedule.Doctor = doctor;
-            if (schedule.StartTime > schedule.EndTime)
-            {
-                schedule.ShiftLength = schedule.StartTime - schedule.EndTime;
-            }
-            
-            schedule.ShiftLength = schedule.EndTime - schedule.StartTime;
+            schedule.ShiftLength = schedule.StartTime > schedule.EndTime
+                ? schedule.StartTime - schedule.EndTime
+                : schedule.EndTime - schedule.StartTime;
 
             if (!await _unitOfWork.Schedule.AddAsync(schedule))
             {
@@ -94,23 +96,23 @@ namespace HMS.Areas.Staff.Controllers
             return CreatedAtRoute(nameof(GetSchedule), new { /*version = HttpContext.GetRequestedApiVersion().ToString(),*/ scheduleId = schedule.Id }, schedule);
         }
         
-        /*[HttpPatch("{scheduleId:int},{patientId:int}", Name = "UpdateSchedule")]
+        [HttpPatch("{scheduleId:int},{doctorId:int}", Name = "UpdateSchedule")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> UpdateSchedule(int scheduleId, int patientId, [FromBody] ScheduleCreateDTO scheduleCreateDto)
+        public async Task<IActionResult> UpdateSchedule(int scheduleId, int doctorId, [FromBody] ScheduleCreateDTO scheduleToUpdate)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
-            if (scheduleCreateDto == null || scheduleId != scheduleCreateDto.Id)
+            if (scheduleToUpdate == null || scheduleId != scheduleToUpdate.Id)
             {
                 return BadRequest(ModelState);
             }
+            
+            var doctor = await _unitOfWork.Doctor.GetFirstOrDefaultAsync(d => d.Id == doctorId);
 
-            var patient = await _unitOfWork.Patient.GetFirstOrDefaultAsync(p => p.Id == patientId, includeProperties:"Doctor");
-            var schedule = _mapper.Map<Schedule>(scheduleCreateDto);
-            schedule.Patient = patient;
-            schedule.Doctor = patient.Doctor;
-            schedule.DaysUntilSchedule = schedule.DateOfSchedule - DateTime.Now;
+            var schedule = _mapper.Map<Schedule>(scheduleToUpdate);
+            schedule.ScheduleDay = schedule.StartTime.ToString("dddd");
+            schedule.Doctor = doctor;
         
             if (!_unitOfWork.Schedule.UpdateSchedule(schedule))
             {
@@ -146,6 +148,6 @@ namespace HMS.Areas.Staff.Controllers
             await _unitOfWork.Save();
         
             return NoContent();
-        }*/
+        }
     }
 }
