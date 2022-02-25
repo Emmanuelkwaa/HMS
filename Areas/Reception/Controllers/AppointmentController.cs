@@ -67,11 +67,11 @@ namespace HMS.Areas.Reception.Controllers
 
         [HttpPost(template:"{patientId:int},{doctorId:int}")]
         [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(AppointmentCreateDTO))]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> CreateAppointment(int doctorId, int patientId, [FromBody] AppointmentCreateDTO appointmentCreateDto)
         {
-            if(!ModelState.IsValid) return StatusCode(404, ModelState);
+            if(!ModelState.IsValid) return StatusCode(400, ModelState);
 
             var patient = await _unitOfWork.Patient.GetFirstOrDefaultAsync(p => p.Id == patientId, includeProperties:"Doctor");
 
@@ -129,7 +129,7 @@ namespace HMS.Areas.Reception.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> DeleteAppointment(int appointmentId)
         {
-            var appointment = await _unitOfWork.Appointment.GetFirstOrDefaultAsync(h => h.Id == appointmentId);
+            var appointment = await _unitOfWork.Appointment.GetFirstOrDefaultAsync(a => a.Id == appointmentId);
         
             if (appointment == null)
             {
